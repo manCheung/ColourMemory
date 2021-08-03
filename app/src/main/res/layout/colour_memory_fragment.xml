@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_bg"
+    tools:context=".view.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@color/White"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/highScoresButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:background="@color/White"
+        android:padding="@dimen/spacing_small"
+        android:scaleType="fitCenter"
+        android:src="@drawable/high_score"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_logo"
+        app:layout_constraintLeft_toRightOf="@+id/tv_current_score"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_current_score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@color/White"
+        android:gravity="center"
+        android:text="Score: 0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_logo"
+        app:layout_constraintLeft_toRightOf="@+id/iv_logo"
+        app:layout_constraintRight_toLeftOf="@+id/highScoresButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridView
+        android:id="@+id/gridview_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="0dip"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <TextView
+        android:id="@+id/tv_iswin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/win"
+        android:textColor="@color/Red"
+        android:textSize="@dimen/font_large"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

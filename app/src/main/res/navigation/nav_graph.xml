@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/colourMemoryFragment">
+
+    <fragment
+        android:id="@+id/colourMemoryFragment"
+        android:name="com.man.colourmemory.view.ColourMemoryFragment"
+        android:label="colour_memory_fragment"
+        tools:layout="@layout/colour_memory_fragment" >
+        <action
+            android:id="@+id/action_colourMemoryFragment_to_scoresFragment"
+            app:destination="@id/scoresFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scoresFragment"
+        android:name="com.man.colourmemory.view.ScoresFragment"
+        android:label="scores_fragment"
+        tools:layout="@layout/scores_fragment" />
+
+</navigation>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ColourMemory</string>
+    <string name="high_scores_text">High Scores</string>
+    <string name="score">Score: %1$d</string>
+    <string name="cancel">Cancer</string>
+    <string name="submit">Submit</string>
+    <string name="hint_name">Your Name</string>
+    <string name="name_space_error">Name can not empty!</string>
+    <string name="enter_your_name_message">You Win!\nPlease Enter Your Name To Save The Record!</string>
+    <string name="score_record">Score Record</string>
+    <string name="no_score_record">No Score Record!</string>
+    <string name="score_item_name_text">Name: </string>
+    <string name="score_item_score_text">Score: </string>
+    <string name="win">You Win!</string>
+    <string name="win_info">Your Score is %1$d\n\nYour Rank is %2$d</string>
+</resources>
